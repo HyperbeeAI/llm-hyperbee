@@ -1,38 +1,32 @@
-# llm-fireworks
+# llm-hyperbee
 
-[![PyPI](https://img.shields.io/pypi/v/llm-fireworks.svg)](https://pypi.org/project/llm-fireworks/)
-[![Changelog](https://img.shields.io/github/v/release/simonw/llm-fireworks?include_prereleases&label=changelog)](https://github.com/simonw/llm-fireworks/releases)
-[![Tests](https://github.com/simonw/llm-fireworks/actions/workflows/test.yml/badge.svg)](https://github.com/simonw/llm-fireworks/actions/workflows/test.yml)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/llm-fireworks/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/llm-fireworks.svg)](https://pypi.org/project/llm-hyperbee/)
+[![Changelog](https://img.shields.io/github/v/release/HyperbeeAI/llm-hyperbee?include_prereleases&label=changelog)](https://github.com/HyperbeeAI/llm-hyperbee/releases)
+[![Tests](https://github.com/HyperbeeAI/llm-hyperbee/actions/workflows/test.yml/badge.svg)](https://github.com/HyperbeeAI/llm-hyperbee/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/HyperbeeAI/llm-hyperbee/blob/main/LICENSE)
 
-Access [fireworks.ai](https://fireworks.ai/) models via API
+Access [hyperbee.ai](https://www.hyperbee.ai/) models via API
 
 ## Installation
 
 Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
 ```bash
-llm install llm-fireworks
+llm install llm-hyperbee
 ```
 ## Usage
 
-Obtain a [Fireworks API key](https://fireworks.ai/api-keys) and save it like this:
-
-```bash
-llm keys set fireworks
-# <Paste key here>
-```
 Run `llm models` to get a list of models.
 
 Run prompts like this:
 ```bash
-llm -m fireworks/models/llama-v3-70b-instruct 'five great names for a pet ocelot'
+llm -m hyperbee 'five great names for a pet ocelot'
 ```
 
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:
 ```bash
-cd llm-fireworks
+cd llm-hyperbee
 python3 -m venv venv
 source venv/bin/activate
 ```
