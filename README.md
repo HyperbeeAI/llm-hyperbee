@@ -25,7 +25,7 @@ Run `llm models` to get a list of models.
 
 Run prompts like this:
 ```bash
-llm -m hyperbee 'five great names for a pet ocelot'
+llm -m hyperbee/auto 'five great names for a pet ocelot'
 ```
 
 ## Development
