@@ -2,7 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/llm-fireworks.svg)](https://pypi.org/project/llm-hyperbee/)
 [![Changelog](https://img.shields.io/github/v/release/HyperbeeAI/llm-hyperbee?include_prereleases&label=changelog)](https://github.com/HyperbeeAI/llm-hyperbee/releases)
-[![Tests](https://github.com/HyperbeeAI/llm-hyperbee/actions/workflows/test.yml/badge.svg)](https://github.com/HyperbeeAI/llm-hyperbee/actions/workflows/test.yml)
+[![Tests1](https://github.com/HyperbeeAI/llm-hyperbee/actions/workflows/test.yml/badge.svg)](https://github.com/HyperbeeAI/llm-hyperbee/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/HyperbeeAI/llm-hyperbee/blob/main/LICENSE)
 
 Access [hyperbee.ai](https://www.hyperbee.ai/) models via API
