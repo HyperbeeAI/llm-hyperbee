@@ -6,6 +6,7 @@ MODELS = (
 )
 
 class HyperbeeChat(Chat):
+    needs_key = "hyperbee"
     def __init__(self, model_name):
         super().__init__(
             model_name=model_name,
@@ -20,5 +21,9 @@ class HyperbeeChat(Chat):
 
 @llm.hookimpl
 def register_models(register):
+    # Only do this if the key is set
+    key = llm.get_key("", "hyperbee", "LLM_HYPERBEE_KEY")
+    if not key:
+        return
     for model_id in MODELS:
         register(HyperbeeChat(model_id))

@@ -14,6 +14,12 @@ Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
 llm install llm-hyperbee
 ```
 ## Usage
+Obtain a [Hyperbee API key](https://www.hyperbee.ai/) and save it like this:
+
+```bash
+llm keys set hyperbee
+# <Paste key here>
+```
 
 Run `llm models` to get a list of models.
 
