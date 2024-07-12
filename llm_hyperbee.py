@@ -2,9 +2,8 @@ import llm
 from llm.default_plugins.openai_models import Chat
 
 MODELS = (
-    "workspace/llm_model"
+    "hive"
 )
-
 
 class HyperbeeChat(Chat):
     def __init__(self, model_name):
@@ -13,12 +12,11 @@ class HyperbeeChat(Chat):
             model_id=(
                 "hyperbee-chat"
             ),
-            api_base="http://34.110.195.245/v1/",
+            api_base="https://api.hyperbee.ai/v1/",
         )
 
     def __str__(self):
         return "Hyperbee: {}".format(self.model_id)
-
 
 @llm.hookimpl
 def register_models(register):
