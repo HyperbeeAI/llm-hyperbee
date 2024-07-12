@@ -2,7 +2,19 @@ import llm
 from llm.default_plugins.openai_models import Chat
 
 MODELS = (
-    "hive"
+    "auto",
+    "claude-3-haiku-20240307",
+    "claude-3-opus-20240229",
+    "claude-3-sonnet-20240229",
+    "claude-3-5-sonnet-20240620",
+    "gemini-1.5-flash",
+    "gemini-1.5-pro",
+    "small-bee-en",
+    "gpt-4o",
+    "gpt-3.5-turbo",
+    "gpt-4-turbo",
+    "gpt-4",
+    "llama-3-70b-instruct",
 )
 
 class HyperbeeChat(Chat):
@@ -11,7 +23,7 @@ class HyperbeeChat(Chat):
         super().__init__(
             model_name=model_name,
             model_id=(
-                "hyperbee-chat"
+                "hyperbee/" + model_name
             ),
             api_base="https://api.hyperbee.ai/v1/",
         )
